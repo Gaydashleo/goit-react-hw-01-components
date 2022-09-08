@@ -1,11 +1,11 @@
 import PropTypes from 'prop-types';
-// import css from './UserCard.module.css';
+import css from './UserCard.module.css';
 
 export const UserCard = ({ username,tag,location,avatar,stats }) => {
   // console.log(events);
   return (
-    <div class="profile">
-  <div class="description">
+    <div className={css.UserCard} >
+<div class="description">
     <img
       src="https://cdn-icons-png.flaticon.com/512/1077/1077012.png"
       alt="User avatar"
