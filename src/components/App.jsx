@@ -15,7 +15,7 @@ export const App = () => {
       }}
     >
       <CardBoard/>
-      {/* <UserCard events={ user} /> */}
+      <UserCard events={ user} />
       {/* React homework template */}
     </div>
   );
