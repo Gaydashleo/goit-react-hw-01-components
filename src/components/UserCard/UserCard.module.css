@@ -42,6 +42,7 @@
     /* justify-content: center; */
     /* width: 100%; */
     padding-inline-start: 0px;
+    background-color: rgb(250, 248, 248);
   }
   .item{
     display: flex;
