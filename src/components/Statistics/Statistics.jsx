@@ -4,12 +4,12 @@ import css from './Statistics.module.css';
 export default function Statistics({title, stats }) {
   return (
     <section className={css.statistics}>
-      <h2 class="title">Upload stats</h2>
+      <h2 className={css.title}>{title}</h2>
 
-      <ul class="stat-list">
-        <li class="item">
-          <span class="label">.docx</span>
-          <span class="percentage">4%</span>
+      <ul className={css.statList }>
+        <li className="item">
+          <span className="label">.docx</span>
+          <span className="percentage">4%</span>
         </li>
         <li class="item">
           <span class="label">.mp3</span>
