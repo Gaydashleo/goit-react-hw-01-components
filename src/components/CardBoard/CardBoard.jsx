@@ -1,6 +1,6 @@
-import { UserCard } from 'components/UserCard/UserCard';
-import css from './CardBoard.module.css';
+// import { UserCard } from 'components/UserCard/UserCard';
+// import css from './CardBoard.module.css';
 
-export const CardBoard = () => {
-  return <UserCard className={css.CardBoard} />
-};
+// export const CardBoard = () => {
+//   return <UserCard className={css.CardBoard} />
+// };

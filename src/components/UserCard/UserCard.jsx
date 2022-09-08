@@ -13,7 +13,9 @@ export default function UserCard({
     <div className={css.description}>
         <img
           src={ avatar}
-      alt="User avatar"
+        alt="User avatar"
+        width={100}
+        height={100}
       className={ css.avatar}
     />
     <p className={css.name}>{username}</p>
