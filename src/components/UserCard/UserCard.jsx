@@ -2,7 +2,6 @@ import PropTypes from 'prop-types';
 import css from './UserCard.module.css';
 
 export const UserCard = ({ username,tag,location,avatar,stats }) => {
-  // console.log(events);
   return (
     <div className={css.UserCard} >
 <div class="description">
@@ -11,12 +10,12 @@ export const UserCard = ({ username,tag,location,avatar,stats }) => {
       alt="User avatar"
       class="avatar"
     />
-    <p class="name">Petra Marica</p>
+    <p class="username">Petra Marica</p>
     <p class="tag">@pmarica</p>
     <p class="location">Salvador, Brasil</p>
   </div>
 
-  <ul class="stats">
+  <ul className="stats">
     <li>
       <span class="label">Followers</span>
       <span class="quantity">1000</span>

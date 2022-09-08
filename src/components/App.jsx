@@ -1,6 +1,6 @@
 import{CardBoard} from 'components/CardBoard/CardBoard'
-import { UserCard } from 'components/UserCard/UserCard';
-import  user  from '../user.json';
+// import { UserCard } from 'components/UserCard/UserCard';
+// import  user  from '../user.json';
 
 export const App = () => {
   return (
@@ -15,8 +15,8 @@ export const App = () => {
       }}
     >
       <CardBoard/>
-      <UserCard events={ user} />
-      {/* React homework template */}
+      {/* <UserCard events={ user} /> */}
+     
     </div>
   );
 };
