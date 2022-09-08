@@ -1,43 +1,52 @@
 import PropTypes from 'prop-types';
 import css from './UserCard.module.css';
 
-export const UserCard = ({ username,tag,location,avatar,stats }) => {
-  return (
+export default function UserCard({
+  username,
+  tag,
+  location,
+  avatar,
+  stats: { followers, views, likes },
+}) 
+  {return (
     <div className={css.UserCard} >
-<div class="description">
-    <img
-      src="https://cdn-icons-png.flaticon.com/512/1077/1077012.png"
+    <div className={css.description}>
+        <img
+          src={ avatar}
       alt="User avatar"
-      class="avatar"
+      className={ css.avatar}
     />
-    <p class="username">Petra Marica</p>
-    <p class="tag">@pmarica</p>
-    <p class="location">Salvador, Brasil</p>
+    <p className={css.name}>{username}</p>
+    <p className={css.tag}>@{tag}</p>
+    <p className={css.location}>{location}</p>
   </div>
 
-  <ul className="stats">
-    <li>
-      <span class="label">Followers</span>
-      <span class="quantity">1000</span>
+  <ul className={css.stats}>
+    <li className={css.item}>
+      <span className={css.lable}>Followers</span>
+      <span className={css.quantity}>{followers}</span>
     </li>
-    <li>
-      <span class="label">Views</span>
-      <span class="quantity">2000</span>
+    <li className={css.item}>
+      <span className={css.lable}>Views</span>
+      <span className={css.quantity}>{views}</span>
     </li>
-    <li>
-      <span class="label">Likes</span>
-      <span class="quantity">3000</span>
+    <li className={css.item}>
+      <span className={css.lable}>Likes</span>
+      <span className={css.quantity}>{likes}</span>
     </li>
   </ul>
 </div>
   );
 };
   
-Event.propTypes = {
+UserCard.propTypes = {
   username: PropTypes.string.isRequired,
   tag: PropTypes.string.isRequired,
   location: PropTypes.string.isRequired,
-  avatar: PropTypes.string.isRequired,
-  stats: PropTypes.object.isRequired
-  
-};
+  avatar: PropTypes.string,
+  stats: PropTypes.shape({
+    followers: PropTypes.number,
+    views: PropTypes.number,
+    likes:PropTypes.number,
+  })
+  };
