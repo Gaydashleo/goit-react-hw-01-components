@@ -1,10 +1,12 @@
 // import{CardBoard} from 'components/CardBoard/CardBoard'
 import UserCard from 'components/UserCard/UserCard';
 import Statistics from 'components/Statistics/Statistics';
-
+import FriendList from 'components/FriendList/FriendList';
 
 import  user  from 'data/user.json';
 import stats from 'data/stats.json';
+import friends from 'data/friends.json';
+
 export const App = () => {
   return (
     <div
@@ -26,7 +28,7 @@ export const App = () => {
         stats={user.stats} />
       
       <Statistics title="Upload stats" stats={stats} />
-     
+      <FriendList friends={friends} />
     </div>
   );
 };

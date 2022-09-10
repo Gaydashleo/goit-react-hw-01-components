@@ -1,8 +1,9 @@
 .statistics{
   border: 1px solid #1a1b1b;
-    border-radius: 5px;
-    box-shadow: 3px 3px 6px 0px rgba(0, 0, 0, 0.75);
+  border-radius: 5px;
+  box-shadow: 3px 3px 6px 0px rgba(0, 0, 0, 0.75);
   justify-content: center;
+  margin: 30px;
 }
 .title{
   display: flex;
@@ -14,6 +15,7 @@
 
 .statList{
   display: flex;
+  padding: 40px;
 }
 
 .item{
