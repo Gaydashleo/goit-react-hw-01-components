@@ -1,0 +1,29 @@
+.statistics{
+  border: 1px solid #1a1b1b;
+    border-radius: 5px;
+    box-shadow: 3px 3px 6px 0px rgba(0, 0, 0, 0.75);
+  justify-content: center;
+}
+.title{
+  display: flex;
+  align-items:center;
+  justify-content: center;
+  color: #ccc;
+  margin-bottom: 30px;
+}
+
+.statList{
+  display: flex;
+}
+
+.item{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  width: 140px;
+
+  color:#c4bebe;
+}
+  
+  
