@@ -1,21 +1,22 @@
 .statistics{
+  background-color: rgb(245, 232, 215);
   border: 1px solid #1a1b1b;
   border-radius: 5px;
   box-shadow: 3px 3px 6px 0px rgba(0, 0, 0, 0.75);
-  justify-content: center;
+  align-items:center;
   margin: 30px;
 }
 .title{
   display: flex;
-  align-items:center;
   justify-content: center;
-  color: #ccc;
+  color: rgb(204, 183, 183);
   margin-bottom: 30px;
 }
 
 .statList{
   display: flex;
-  padding: 40px;
+  justify-content: center;
+  
 }
 
 .item{

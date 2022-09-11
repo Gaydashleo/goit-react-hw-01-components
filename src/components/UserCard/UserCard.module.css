@@ -3,8 +3,10 @@
   display: flex;
   flex-direction:column ;
   align-items:center;
+  background-color:aliceblue;
 
-margin: 30px;
+  width: 350px;
+  margin: 30px;
 
  border:1px solid #1a1b1b; 
   border-radius: 5px;
@@ -30,18 +32,20 @@ margin: 30px;
       }
   .tag{
     margin-bottom: 10px;
-      color: #dbe1e7;
+      color: #202122;
   }
   .location{
     margin-bottom: 30px;
-      color: #dbe1e7;
+      color: #202122;
   }
   .stats{
     display: flex;
     align-items:center;
+    
     padding-inline-start: 0px;
     background-color: rgb(250, 248, 248);
   }
+
   .item{
     display: flex;
     align-items:center;
